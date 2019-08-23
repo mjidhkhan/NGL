@@ -15,8 +15,6 @@ import { JokeListComponent } from './components/jokes/JokeList/JokeList.componen
     JokeComponent,
     JokeFormComponent,
     JokeListComponent,
-    
-   
   ],
   imports: [
   
