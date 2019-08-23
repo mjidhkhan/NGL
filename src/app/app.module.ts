@@ -3,6 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TaskListComponent } from './components/TaskList/TaskList.component'
+import { TaskComponent } from './components/TaskList/Task/Task.component'
+import { NewTaskComponent } from './components/TaskList/NewTask/NewTask.component';
+import { CheckBoxComponent } from './components/ui/check-box/check-box.component';
+import { ToggleComponent } from './components/ui/toggle/toggle.component';
+import { ButtonComponent } from './components/ui/button/button.component'
 
 
 
@@ -10,13 +16,16 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
-    JokeComponent,
-    JokeFormComponent,
-    JokeListComponent,
+    TaskListComponent,
+    TaskComponent,
+    NewTaskComponent,
+    CheckBoxComponent,
+    ToggleComponent,
+    ButtonComponent
+   
   ],
   imports: [
-  
-BrowserModule,
+    BrowserModule,
     AppRoutingModule
   ],
   providers: [],

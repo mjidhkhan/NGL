@@ -1,0 +1,16 @@
+
+
+<div class="task-list__l-container">
+    <div class="task-list__l-box-a">
+    </div>
+
+    <div class="task-list__l-box-b">
+      <app-NewTask (taskEntered) = "addTask($event)"></app-NewTask>
+    </div>
+    <div class="task-list__l-box-c">
+      <div class="task-list__tasks">
+        <app-Task *ngFor="let task of tasks" [task]="task"></app-Task>
+      </div>
+    </div>
+
+</div>
