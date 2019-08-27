@@ -1,6 +1,11 @@
-<h1 class="title">{{title}}</h1>
-
-<router-outlet></router-outlet>
+<div [ngClass]="selectedTheme">
+    <mat-toolbar color="primary">{{title}}
+           
+    </mat-toolbar>
+    <app-brands></app-brands>
+  
+    <router-outlet></router-outlet>
+</div>
 
 
 
