@@ -1,10 +1,12 @@
 <div [ngClass]="selectedTheme">
-    <mat-toolbar color="primary">{{title}}
-           
-    </mat-toolbar>
+    <mat-toolbar color="primary">{{title}}</mat-toolbar>
     <app-brands></app-brands>
-  <app-messages></app-messages>
+    <div class="container">
+       
+        <app-messages></app-messages>
+    </div>
     <router-outlet></router-outlet>
+    
 </div>
 
 
