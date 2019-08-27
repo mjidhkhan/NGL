@@ -1,0 +1,28 @@
+
+
+
+.container {
+    padding-top: 50px;
+    padding-left: 30px;
+    width: 100%;
+    
+  }
+  .tab {
+    padding: 30px;
+  }
+  
+  .card {
+    max-width: 400px;
+  }
+  .example-header-image {
+      background-size: cover;
+  }
+  .form-fields {
+    display: flex;
+    flex-direction: column;
+  }
+  .selected {
+    background-color: #CFD8DC;
+    color: white;
+  }
+  

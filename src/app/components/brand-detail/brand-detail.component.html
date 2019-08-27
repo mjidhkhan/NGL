@@ -1,0 +1,24 @@
+<div class="container" *ngIf="brand">
+    <div class="container tab" > 
+        <mat-card class=" card">
+            <mat-card-header>
+                <div mat-card-avatar>
+                    <img  mat-card-avatar  class="example-header-image" src="{{brand.photo}}"/>
+                </div>
+                <mat-card-title>{{brand.name}}</mat-card-title>
+                <mat-card-subtitle>{{brand.catagory}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="form-fields">
+                    <mat-form-field>
+                        <input matInput  [(ngModel)] = "brand.name" placeholder="brand name" > 
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput  [(ngModel)] = "brand.catagory" placeholder="brand catagory" >
+                    </mat-form-field>
+                </div>
+                </mat-card-content>
+                <mat-card-actions></mat-card-actions>
+        </mat-card>
+    </div> <!-- card container-->
+</div>

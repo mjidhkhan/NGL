@@ -1,0 +1,14 @@
+<div class="btn-right">
+    <button mat-raised-button color="primary" [matMenuTriggerFor]="menu" mat-right>Brands</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item 
+                *ngFor="let brand of brands"
+                [class.selected]="brand === selectedBrand"
+                (click)="onSelect(brand)">{{brand.name}}
+            </button>
+        </mat-menu>
+</div>
+<app-brand-detail [brand]="selectedBrand"></app-brand-detail>
+  
+
+
