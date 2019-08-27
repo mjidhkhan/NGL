@@ -14,6 +14,7 @@ import { MatTabsModule, MatButtonModule, MatMenuModule, MatIconModule, MatDivide
 // Components Application Related
 import { BrandsComponent } from './components/brands/brands.component';
 import { BrandDetailComponent } from './components/brand-detail/brand-detail.component';
+import { MessagesComponent } from './components/messages/messages.component';
 
 
 
@@ -26,6 +27,8 @@ import { BrandDetailComponent } from './components/brand-detail/brand-detail.com
     // Brands
     BrandsComponent,
     BrandDetailComponent,
+    MessagesComponent,
+    MessagesComponent
    
    
   ],
