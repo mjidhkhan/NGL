@@ -1,11 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
-
-// Modules
+import { AppComponent } from './app.component';
+// Modules UI
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule, MatButtonModule, MatMenuModule, MatIconModule, MatDividerModule, MatTooltipModule, 
   MatDialogModule, MatFormFieldModule, MatInputModule, MatProgressSpinnerModule, MatSnackBarModule,
@@ -15,7 +13,10 @@ import { MatTabsModule, MatButtonModule, MatMenuModule, MatIconModule, MatDivide
 import { BrandsComponent } from './components/brands/brands.component';
 import { BrandDetailComponent } from './components/brand-detail/brand-detail.component';
 import { MessagesComponent } from './components/messages/messages.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
+// Route Module
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -23,12 +24,12 @@ import { MessagesComponent } from './components/messages/messages.component';
 @NgModule({
   declarations: [
     AppComponent,
-    
     // Brands
     BrandsComponent,
     BrandDetailComponent,
     MessagesComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
    
    
   ],

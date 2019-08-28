@@ -1,12 +1,24 @@
 <div [ngClass]="selectedTheme">
     <mat-toolbar color="primary">{{title}}</mat-toolbar>
-    <app-brands></app-brands>
-    <div class="container">
+        <div class="container">
+            <mat-card class=" card">
+                <mat-card-header>                
+                    <mat-card-title> Dashboard</mat-card-title>
+                </mat-card-header>
+                <mat-card-content class="card-top"><h2>Top Brands</h2></mat-card-content>
+                <mat-card-actions>
+                    <a type="button" mat-raised-button color="primary" routerLink="/dashboard" >Dashboard</a>
+                    <a type="button" mat-raised-button color="primary" routerLink="/brands" >Brands</a>
+                </mat-card-actions>
+            </mat-card>
+        </div> <!-- card container-->
        
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="container">
         <app-messages></app-messages>
     </div>
-    <router-outlet></router-outlet>
-    
 </div>
 
 
